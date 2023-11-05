@@ -1,0 +1,41 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<body>
+    <link rel="stylesheet" href="/static/Mouse_coordinates_CSS.css">
+    <span id="mouse_coordinates_span">Координаты мыши и события клавиатуры (стандартная вёрстка)</span>
+    <div class="mouse_coordinates">
+        <div>
+            <b>Координаты мыши</b>
+            <div class="mouse_coordinates_x_y">
+                <span>X-координата: </span>
+                <span id="x_m_coord_id"></span>
+                <span>Y-координата: </span>
+                <span id="y_m_coord_id"></span>
+            </div>
+        </div>
+        <div>
+            <b>Нажатая кнопка клавиатуры:</b>
+            <span id="keyboard_id"></span>
+        </div>
+        <div>
+            <b>Нажатая кнопка мыши:</b>
+            <span id="mouseboard_id"></span>
+            <span id="mouseboard_two_id"></span>
+        </div>
+    </div>
+    <hr>
+    <span id="mouse_coordinates_span">Координаты мыши и события клавиатуры (вёрстка чисто на Java Script)</span>
+    <div class="mouse_coordinates" id="mouse_coordinates_JS">
+
+    </div>
+    <hr>
+    <span id="mouse_coordinates_span">Координаты мыши и события клавиатуры (вёрстка в JQuery)</span>
+    <div class="mouse_coordinates" id="mouse_coordinates_JQ">
+
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="/static/Mouse_coordinates_JS.js"></script>
+
+{% endblock %}

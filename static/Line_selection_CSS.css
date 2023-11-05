@@ -1,0 +1,4 @@
+.line_selection > li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,71 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Counter_css.css">
+<span>Счетчик (вёрстка в JQuery)</span>
+<div class="Counter_standard">
+    <div class="product">
+        <div><img src="/static/img-1.jpg" alt="нету фото"></div>
+        <div class="table">
+            <table cellspacing="5" cellpdding="0" class="table_Q">
+                <tr>
+                    <td>Производитель:</td>
+                    <td>Samsung/Корея</td>
+                </tr>
+                <tr>
+                    <td>Дисплей:</td>
+                    <td>Диагональ 6.75/ 1600x720/ </td>
+                </tr>
+                <tr>
+                    <td>Емкость АКБ:</td>
+                    <td>5000 мА-ч</td>
+                </tr>
+                <tr>
+                    <td>Процессор:</td>
+                    <td>Shandregon 500</td>
+                </tr>
+                <tr>
+                    <td>Встроенная память:</td>
+                    <td>128 Гб</td>
+                </tr>
+                <tr>
+                    <td>Оперативная память:</td>
+                    <td>8 Гб</td>
+                </tr>
+                <tr>
+                    <td>код товара:</td>
+                    <td>12354981616846</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="Counter">
+        <div>
+            <span>Цена товара:</span><span id="price_id">1200</span><span> $</span>
+        </div>
+        <div>
+            <button id="button_minus" onclick="button_minus_f()">-</button>
+            <span id="count_id">0</span><span> шт.</span>
+            <button id="button_plus" onclick="button_plus_f()">+</button>
+        </div>
+        <div>
+            <span>Сумма закупки:</span><span id="the_amount_id">0</span><span> $</span>
+        </div>
+    </div>
+</div>
+<hr>
+<span>Счетчик (вёрстка чисто на Java Script)</span>
+<div class="Counter_class_js">
+
+</div>
+<hr>
+<span>Счетчик (вёрстка в JQuery)</span>
+<div class="Counter_jQueri">
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="/static/Counter_js.js"></script>
+
+{% endblock %}

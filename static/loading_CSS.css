@@ -1,0 +1,30 @@
+.loading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading_1 {
+    width: 900px;
+    height: 50px;
+    margin: 10px;
+    border: solid 1px black;
+}
+
+.loading_1 > div:nth-child(1) {
+    position: absolute;
+    background-color: green;
+    width: 0px;
+    height: 50px;
+    z-index: 2;
+    transition: 300ms;
+}
+
+.loading_1 > div:nth-child(2) {
+    position: relative;
+    top: 10px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    z-index: 3;
+}

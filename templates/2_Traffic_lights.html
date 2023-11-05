@@ -1,0 +1,64 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Traffic_lights_CSS.css">
+<span>Светофор (стандартная верстка)</span>
+<div class="Traffic_lights">
+    <div>
+        <span>(с изменением цвета фона)</span>
+        <p></p>
+        <div class="Traffic_lights_block">
+            <div class="Traffic_lights_1"></div>
+            <div class="Traffic_lights_2"></div>
+            <div class="Traffic_lights_3"></div>
+        </div>
+        <p></p>
+        Переключатель светофора <button id="button_1">кнопка</button>
+    </div>
+    <div>
+        <span>(с изменением картинки)</span>
+        <p></p>
+        <div class="Traffic_lights_block_medium">
+            <div><img id="img_id" src="/static/1_Traffic_lights_red.bmp" alt="нет сфетофора"></div>
+        </div>
+        <p></p>
+        Переключатель светофора <button id="button_2">кнопка</button>
+    </div>
+    <div>
+        <span>(с перемещением картинки по Z-координатам)</span>
+        <p></p>
+        <div class="Traffic_lights_block">
+            <div class="Traffic_lights_0">
+                <div class="div_img"></div><img id="img_id_red" src="/static/1_Traffic_lights_red.bmp" alt="нет сфетофора">
+            </div>
+            <div class="Traffic_lights_0">
+                <div class="div_img"></div><img id="img_id_yellow" src="/static/2_Traffic_lights_yellow.bmp"
+                    alt="нет сфетофора">
+            </div>
+            <div class="Traffic_lights_0">
+                <div class="div_img"></div><img id="img_id_green" src="/static/3_Traffic_lights_green.bmp" alt="нет сфетофора">
+            </div>
+        </div>
+        <p></p>
+        Переключатель светофора <button id="button_3">кнопка</button>
+    </div>
+</div>
+<hr>
+<span>Светофор (вёрстка чисто на Java Script)</span>
+<div>
+    <div class="Traffic_lights" id="new_traffic_lights_JS">
+
+    </div>
+</div>
+<hr>
+<span>Светофор (вёрстка в JQuery)</span>
+<div>
+    <div class="Traffic_lights" id="new_traffic_lights_JQery">
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="/static/Traffic_lights_JS.js"></script>
+
+{% endblock %}

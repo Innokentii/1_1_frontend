@@ -1,0 +1,33 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Copy_properties_CSS.css">
+<span>Свойства копирования (стандартная вёрстка)</span>
+<div>
+    <div class="block_Copy_properties">
+        <div oncopy="return false;">
+            Этот текст нельзя скопировать (можете попробовать скопировать и вставить в любое приложение (excel, word и
+            т.д))
+        </div>
+        <div id="copy_properties">
+            При копировании этого текста у и вставке его в любое приложение (excel, word и т.д) с скопированным текстом
+            будет прилагатся ссылка на источник
+        </div>
+    </div>
+</div>
+<hr>
+<span>Свойства копирования (вёрстка чисто на Java Script)</span>
+<div id="Copy_properties_gen_JS">
+
+</div>
+<hr>
+<span>Свойства копирования (вёрстка в JQuery)</span>
+<div id="Copy_properties_gen_JQ">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/static/Copy_properties_JS.js"></script>
+
+{% endblock %}

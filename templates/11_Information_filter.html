@@ -1,0 +1,74 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Information_filter_CSS.css">
+<span>Фильтр информации (стандартная вёрстка)</span>
+<div>
+    <table id="table_id">
+        <tr>
+            <th id="th_1_id">№</th>
+            <th id="th_2_id">ФИО</th>
+            <th id="th_3_id">Год рож-дения</th>
+            <th id="th_4_id">Город проживания</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Иванов Иван Иванович</td>
+            <td>2001</td>
+            <td>Москва</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Третьяков Антон Васильевич</td>
+            <td>1985</td>
+            <td>Алматы</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Владислав Евгений Викторович</td>
+            <td>1995</td>
+            <td>Екатеринбург</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Станислав Артур Григорьевич</td>
+            <td>2003</td>
+            <td>Нью-Йорк</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Самойлов Александр Евгеньевич</td>
+            <td>1989</td>
+            <td>Якутск</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Протопопов Антон Витальевич</td>
+            <td>1991</td>
+            <td>Нерюнгри</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Станислав Артур Григорьевич</td>
+            <td>1975</td>
+            <td>Хабаровск</td>
+        </tr>
+    </table>
+    <div class="span_IF">Нажмите на заглавную строку текущего столбца для сортировки данных по значению</div>
+</div>
+<hr>
+<span>Фильтр информации (вёрстка чисто на Java Script)</span>
+<div id="Information_filter_id_JS">
+
+</div>
+<hr>
+<span>Фильтр информации (вёрстка в JQuery)</span>
+<div id="Information_filter_id_JQ">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/static/Information_filter_JS.js"></script>
+
+{% endblock %}

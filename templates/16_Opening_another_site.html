@@ -1,0 +1,25 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Opening_another_site_CSS.css">
+<span>Открытие сторонних сайтов (стандартная вёрстка)</span>
+<div class="Ifarme_html">
+    <iframe src="https://www.youtube.com/embed/HJA92LQrsvw" frameborder="1" width="500px" height="350px"></iframe>
+    <iframe src="https://ru.wikipedia.org/wiki/Iframe" frameborder="1" width="500px" height="350px"></iframe>
+</div>
+<hr>
+<span>Открытие сторонних сайтов (вёрстка чисто на Java Script)</span>
+<div class="Ifarme_html" id="Ifarme_html_id_JS">
+
+</div>
+<hr>
+<span>Открытие сторонних сайтов (вёрстка в JQuery)</span>
+<div class="Ifarme_html" id="Ifarme_html_id_JQ">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/static/Opening_another_site_JS.js"></script>
+
+{% endblock %}

@@ -1,0 +1,70 @@
+body>span{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cats_class {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.cats_class>img {
+    width: 200px;
+    height: 150px;
+    border: solid 3px black;
+}
+
+.leopard_class {
+    display: flow-root;
+    font-size: 1.8em;
+}
+
+.leopard_class>img {
+    width: 400px;
+    height: 300px;
+    border: solid 3px black;
+    margin: 10px;
+    float: right;
+
+}
+
+.types_of_leopards {
+    font-size: 0.65em;
+}
+
+@media (max-width: 700px) {
+    .leopard_class>img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .leopard_class {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leopard_class>span:nth-child(2) {
+        order: -1;
+    }
+
+    .leopard_class>img {
+        width: 100%;
+    }
+}

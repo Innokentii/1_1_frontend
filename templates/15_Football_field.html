@@ -1,0 +1,28 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Football_field_CSS.css">
+<span>Футбольное поле (стандартная вёрстка)</span>
+<div>
+    <div class="field" id="field_id">
+        <div class="bool" id="bool_id"></div>
+    </div>
+    <span class="Football_field">Нажмите и удерживайте левую кнопку мыши для передвижения мяча</span>
+</div>
+<hr>
+<span>Футбольное поле (вёрстка чисто на Java Script)</span>
+<div id="Football_field_JS">
+
+</div>
+<hr>
+<span>Футбольное поле (вёрстка в JQuery)</span>
+<div id="Football_field_JQ">
+
+</div>
+<hr>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/static/Football_field_JS.js"></script>
+
+{% endblock %}

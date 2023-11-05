@@ -1,0 +1,50 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Calculator_CSS.css">
+<span>Калькулятор (стандартная вёрстка)</span>
+<div class="calculator">
+    <div class="result_module">ввод данных</div>
+    <div class="buttons_module">
+        <button onclick="del_f()">Del.</button>
+        <button onclick="square_root()">&#8730;</button>
+        <button onclick="square()">X&#178;</button>
+        <button onclick="cube()">X&#179;</button>
+        <button onclick="click_calculator_f('(')">(</button>
+        <button onclick="click_calculator_f(')')">)</button>
+        <button onclick="factorial()">!</button>
+        <button onclick="click_calculator_f('*')">*</button>
+        <button onclick="click_calculator_f('7')">7</button>
+        <button onclick="click_calculator_f('8')">8</button>
+        <button onclick="click_calculator_f('9')">9</button>
+        <button onclick="click_calculator_f('/')">/</button>
+        <button onclick="click_calculator_f('4')">4</button>
+        <button onclick="click_calculator_f('5')">5</button>
+        <button onclick="click_calculator_f('6')">6</button>
+        <button onclick="click_calculator_f('+')">+</button>
+        <button onclick="click_calculator_f('1')">1</button>
+        <button onclick="click_calculator_f('2')">2</button>
+        <button onclick="click_calculator_f('3')">3</button>
+        <button onclick="click_calculator_f('-')">-</button>
+        <button onclick="delete_f()">С</button>
+        <button onclick="click_calculator_f('0')">0</button>
+        <button onclick="click_calculator_f('.')">.</button>
+        <button onclick="eval_f ()">=</button>
+    </div>
+</div>
+<hr>
+<span>Калькулятор (вёрстка чисто на Java Script)</span>
+<div class="calculator" id='calculator_JS_id'>
+
+</div>
+<hr>
+<span>Калькулятор (вёрстка в JQuery)</span>
+<div class="calculator" id='calculator_JQ_id'>
+
+</div>
+<hr>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="/static/Calculator_JS.js"></script>
+
+{% endblock %}

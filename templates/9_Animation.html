@@ -1,0 +1,58 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Animation_CSS.css">
+<span>Анимация (стандартная вёрстка)</span>
+<div class="animation">
+    <div class="door_animation">
+        <h2>Hello</h2>
+        <img class="door_1" src="/static/Door-1.bmp" alt="нет двери">
+        <img class="door_2" src="/static/Door-2.bmp" alt="нет двери">
+        <span>(укажите на изображение)</span>
+    </div>
+    <div class="watch">
+        <div class="big_hand_of_the_clock" id="big_hand_of_the_clock_id"></div>
+        <div class="small_hand_of_the_clock" id="small_hand_of_the_clock_id"></div>
+        <b>1</b>
+        <b>2</b>
+        <b>3</b>
+        <b>4</b>
+        <b>5</b>
+        <b>6</b>
+        <b>7</b>
+        <b>8</b>
+        <b>9</b>
+        <b>10</b>
+        <b>11</b>
+        <b>12</b>
+        <div class="second_hand" id="second_hand_id"></div>
+        <div class="clock_center"></div>
+    </div>
+    <div class="_3_D">
+        <div class="cube">
+            <div class="cube_front">фронт</div>
+            <div class="cube_back">тыл</div>
+            <div class="cube_right">правая</div>
+            <div class="cube_left">левая</div>
+            <div class="cube_top">вверхняя</div>
+            <div class="cube_bottom">нижняя</div>
+        </div>
+        <span>(куб можно вращать стрелками клавиатуры "вверх", "вниз", "влево", "вправо")</span>
+    </div>
+</div>
+<hr>
+<span>Анимация (вёрстка чисто на Java Script)</span>
+<div class="animation" id="animation_JS">
+
+</div>
+<hr>
+<span>Анимация (вёрстка в JQuery)</span>
+<div class="animation" id="animation_JQ">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/static/Animation_JS.js"></script>
+
+{% endblock %}

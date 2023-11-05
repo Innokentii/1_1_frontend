@@ -1,0 +1,33 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Image_magnification_CSS.css">
+<span>Увеличение изображения (стандартная вёрстка)</span>
+<div>
+    <div class="Image_magnification">
+        <h1>комплект одежды ADIDAS (летний)</h1>
+        <div class="img_0" id="img_0"></div>
+        <div class="choosing_clothes">
+            <div class="img_1" id="img_1"></div>
+            <div class="img_2" id="img_2"></div>
+            <div class="img_3" id="img_3"></div>
+        </div>
+        <span>(Для ближнего просмотра нажмите и удерживайте левую кнопку мыши)</span>
+    </div>
+</div>
+<hr>
+<span>Увеличение изображения (вёрстка чисто на Java Script)</span>
+<div id="Image_magnification_JS">
+
+</div>
+<hr>
+<span>Увеличение изображения (вёрстка в JQuery)</span>
+<div id="Image_magnification_JQ">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/static/Image_magnification_JS.js"></script>
+
+{% endblock %}

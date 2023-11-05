@@ -1,0 +1,27 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Information_editor_CSS.css">
+<span>Редактор информации (стандартная вёрстка)</span>
+<div id="Information_editor">
+    <span>Нажмите <b>E</b> для редактирования текста</span>
+    <span>Нажмите <b>E</b> для сохранения текста</span>
+    <span class="IE_text">Введите текст</span>
+    <textarea class="IE_text">Введите текст</textarea>
+</div>
+<hr>
+<span>Редактор информации (вёрстка чисто на Java Script)</span>
+<div id="Information_editor_JS">
+
+</div>
+<hr>
+<span>Редактор информации (вёрстка в JQuery)</span>
+<div id="Information_editor_JQ">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/static/Information_editor_JS.js"></script>
+
+{% endblock %}

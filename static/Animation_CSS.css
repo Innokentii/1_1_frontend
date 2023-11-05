@@ -1,0 +1,268 @@
+
+.beckend_style {
+    width: 1600px;
+}
+
+.animation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    perspective: 500px;
+}
+
+/*Анимация двери__________________________________________*/
+.door_animation {
+    width: 400px;
+    height: 420px;
+    position: relative;
+    perspective: 1200px;
+}
+.door_animation > img {
+    width: 190px;
+    height: 380px;
+}
+
+.door_animation > h2 {
+    position: absolute;
+    top: 190px;
+    left: 173px;
+    z-index: 2;
+}
+
+.door_animation > span {
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+}
+
+.door_1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.door_2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.door_animation:hover > .door_1 {
+    transform: rotateY(40deg);
+    transform-origin: left;
+    transition: 500ms;
+}
+
+.door_animation:hover > .door_2 {
+    transform: rotateY(-40deg);
+    transform-origin: right;
+    transition: 500ms;
+}
+
+/*Анимация часов__________________________________________*/
+.watch {
+    margin: 20px;
+    width: 350px;
+    height: 350px;
+    border: solid 5px rgb(51, 50, 50);
+    border-radius: 50%;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.big_hand_of_the_clock {
+    width: 115px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 175px;
+    left: 175px;
+    transform: rotateZ(-90deg);
+    transform-origin: left center;
+}
+
+.small_hand_of_the_clock {
+    width: 165px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    top: 175px;
+    left: 175px;
+    transform: rotateZ(-90deg);
+    transform-origin: left center;
+}
+
+.watch > b:nth-child(3) {
+    position: absolute;
+    top: 36.44px;
+    left: 240px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(4) {
+    position: absolute;
+    top: 80px;
+    left: 298.56px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(5) {
+    position: absolute;
+    top: 160px;
+    left: 320px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(6) {
+    position: absolute;
+    top: 240px;
+    left: 298.56px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(7) {
+    position: absolute;
+    left: 255px;
+    top: 298.56px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(8) {
+    position: absolute;
+    left: 175px;
+    top: 320px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(9) {
+    position: absolute;
+    left: 95px;
+    top: 298.56px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(10) {
+    position: absolute;
+    left: 36.44px;
+    top: 240px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(11) {
+    position: absolute;
+    left: 15px;
+    top: 160px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(12) {
+    position: absolute;
+    left: 36.44px;
+    top: 80px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(13) {
+    position: absolute;
+    top: 36.44px;
+    left: 95px;
+    color: red;
+    z-index: 9999;
+}
+
+.watch > b:nth-child(14) {
+    position: absolute;
+    top: 15px;
+    left: 160px;
+    color: red;
+    z-index: 9999;
+}
+
+.second_hand {
+    width: 160px;
+    height: 5px;
+    background-color: rgb(229, 18, 18);
+    position: absolute;
+    top: 175px;
+    left: 175px;
+    transform: rotateZ(-90deg);
+    transform-origin: left center;
+}
+
+.clock_center {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(65, 64, 64);
+    position: absolute;
+    top: 160px;
+    left: 160px;
+}
+
+/*3D куб__________________________________________*/
+._3_D, ._3_D_JS {
+    margin: 75px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    perspective: 500px;
+}
+
+._3_D > span, ._3_D_JS > span {
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+
+.cube, .cube_JS, .cube_JQ {
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+
+.cube > div, .cube_JS > div, .cube_JQ > div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    font: normal 45px Arial;
+    text-align: center;
+    line-height: 200px;
+    backface-visibility: visible;
+}
+
+.cube_front {
+    transform: translateZ(100px);
+}
+
+.cube_back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube_right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube_left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube_top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube_bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}

@@ -1,0 +1,98 @@
+body>span{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    font-family: sans-serif;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Traffic_lights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.Traffic_lights_block, .Traffic_lights_block_medium {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    height: 100px;
+    border: solid 4px black;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.Traffic_lights_block_medium {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: green;
+}
+
+.Traffic_lights_1, .Traffic_lights_2, .Traffic_lights_3 {
+    background-color: rgb(158, 154, 154);
+    border: solid 2px black;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+}
+
+.Traffic_lights_0 {
+    border: solid 2px black;
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    overflow: hidden;
+}
+
+.div_img {
+    position: absolute;
+    background-color: rgb(158, 154, 154);
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    z-index: 2;
+}
+
+#img_id_green, #img_id_yellow, #img_id_red {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: rgb(158, 154, 154);
+    border: solid 2px black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+#img_id_green {
+    z-index: 3;
+}
+
+.Traffic_lights_1 {
+    background-color: red;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+}

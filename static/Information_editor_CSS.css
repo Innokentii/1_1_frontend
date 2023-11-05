@@ -1,0 +1,11 @@
+#Information_editor, #Information_editor_JS, #Information_editor_JQ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.IE_text{
+    margin-top: 10px;
+    height: 100px;
+    font-family: cursive;
+}

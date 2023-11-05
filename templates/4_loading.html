@@ -1,0 +1,34 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/loading_CSS.css">
+<span>Загрузка (стандартная вёрстка)</span>
+<div class="loading">
+    <span><b>Линейная загрузка</b></span>
+    <div class="loading_1">
+        <div></div>
+        <div>0%</div>
+    </div>
+    <div>
+        <button id='loading_button_left_id'>
+            << /button>
+                <button onclick="loading_click_f()">Загрузить</button>
+                <button id='loading_button_right_id'>></button>
+    </div>
+</div>
+<hr>
+<span>Загрузка (вёрстка чисто на Java Script)</span>
+<div class="loading" id="loading_2_id">
+
+</div>
+<hr>
+<span>Загрузка (вёрстка в JQuery)</span>
+<div class="loading" id="loading_3_id">
+
+</div>
+<hr>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="/static/loading_JS.js"></script>
+
+{% endblock %}

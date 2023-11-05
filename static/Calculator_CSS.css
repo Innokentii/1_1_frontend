@@ -1,0 +1,37 @@
+
+
+button {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5em;
+}
+
+.calculator {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.result_module,
+.result_module_JS,
+.result_module_JQ {
+    width: 350px;
+    height: 80px;
+    border: solid 2px black;
+    text-align: end;
+    line-height: 1.5em;
+    font-size: 3em;
+}
+
+.buttons_module {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}

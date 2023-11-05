@@ -1,0 +1,28 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Stop_input_CSS.css">
+<span>Стоп ввод (стандартная вёрстка)</span>
+<div>
+    <input type="text" id="stop_input_text_id"><br>
+    <label><input id="chec_rad_1_id" name="rad_stop_input_1" type="radio" checked>Запрет ввода букв</label><br>
+    <label><input id="chec_rad_2_id" name="rad_stop_input_1" type="radio">Запрет ввода цыфр</label><br>
+    <label><input id="chec_rad_3_id" name="rad_stop_input_1" type="radio">Запрет ввода ", ? . { } [ ] \ | / : ; ! & ^ %
+        # №"</label><br>
+</div>
+<hr>
+<span>Стоп ввод (вёрстка чисто на Java Script)</span>
+<div id="stop_input_id_JS">
+
+</div>
+<hr>
+<span>Стоп ввод (вёрстка в JQuery)</span>
+<div id="stop_input_id_JQ">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/static/Stop_input_JS.js"></script>
+
+{% endblock %}

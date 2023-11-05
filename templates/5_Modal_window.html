@@ -1,0 +1,33 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Modal_window_CSS.css">
+<span>Модальное окно (стандартная вёрстка)</span>
+<div class="modal_windows">
+    <div class="modal_windows_shadow">
+    </div>
+    <div class="modal_windows_module">
+        <span class="cross_close_modal" onclick="close_modale_windows()">X</span>
+        <h3>модальное окно</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolorem, voluptatibus deleniti nam id sed,
+            ipsam, illum aperiam consequuntur omnis cupiditate perspiciatis voluptate accusamus sequi molestiae deserunt
+            necessitatibus excepturi suscipit?</p>
+        <button onclick="close_modale_windows()">Закрыть модальное окно</button>
+    </div>
+    <button onclick="open_modale_windows()">Открыть модальное окно</button>
+</div>
+<hr>
+<span>Модальное окно (вёрстка чисто на Java Script)</span>
+<div class="modal_windows_JS">
+
+</div>
+<hr>
+<span>Модальное окно (вёрстка в JQuery)</span>
+<div class="modal_windows_JQ">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="/static/Modal_window_JS.js"></script>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Hover_click_CSS.css">
+<div class="_8_new_body_cl">
+    <span>hover, click анимации (стандартная вёрстка)</span>
+    <div class="hover_click">
+        <div class="hover_click_block">
+            <b>hover</b>
+            <span>изменение фона блока</span>
+            <div class="hover_click_1"></div>
+            <span>изменение рамки блока</span>
+            <div id="hover_click_2"></div>
+        </div>
+        <div class="hover_click_block">
+            <b>active (нажмите и не отпускайте)</b>
+            <span>изменение фона блока</span>
+            <div class="hover_click_3"></div>
+            <span>изменение рамки блока</span>
+            <div id="hover_click_4"></div>
+        </div>
+        <div class="hover_click_block">
+            <b>click</b>
+            <span>сплывающая подсказка</span>
+            <div class="hover_click_5"></div>
+            <span>нажимная кнопка</span>
+            <div id="hover_click_6"></div>
+        </div>
+    </div>
+    <hr>
+    <span>hover, click анимации (вёрстка чисто на Java Script)</span>
+    <div class="hover_click" id="hover_click_JS">
+
+    </div>
+    <hr>
+    <span>hover, click анимации (вёрстка в JQuery)</span>
+    <div class="hover_click" id="hover_click_JQ">
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/static/Hover_click_JS.js"></script>
+
+{% endblock %}

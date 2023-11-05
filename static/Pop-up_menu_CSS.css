@@ -1,0 +1,561 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.products {
+    width: 550px;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
+    padding-bottom: 20px;
+}
+
+.products_two > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.products_two > div > div:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+
+.p_1, .p_2, .p_3, .p_4, .p_5, .p_6, .p_7, .p_8, .p_9 {
+    background-image: url(A_1.jpg);
+    background-size: cover;
+}
+
+/*Каталог*/
+.mp_1 {
+    background-image: url(A_1.jpg);
+}
+.products_two > div:nth-child(1):hover {
+    border-bottom: solid 3px rgb(52, 37, 187);
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_1 {background-image: url(A_1_blue.jpg)}
+}
+.products_two > div:nth-child(1):active {
+    border-bottom: solid 3px rgb(37, 187, 74);
+    color: rgb(37, 187, 74);
+        .mp_1 {background-image: url(A_1_green.jpg)}
+}
+
+.mp_2 {
+    background-image: url(A_2.jpg);
+}
+.products_two > div:nth-child(2):hover {
+    border-bottom: solid 3px rgb(52, 37, 187);
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_2 {background-image: url(A_2_blue.jpg)}
+}
+.products_two > div:nth-child(2):active {
+    border-bottom: solid 3px rgb(37, 187, 74);
+    color: rgb(37, 187, 74);
+        .mp_2 {background-image: url(A_2_green.jpg)}
+}
+
+.mp_3 {
+    background-image: url(A_3.jpg);
+}
+.products_two > div:nth-child(3):hover {
+    border-bottom: solid 3px rgb(52, 37, 187);
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_3 {background-image: url(A_3_blue.jpg)}
+}
+.products_two > div:nth-child(3):active {
+    border-bottom: solid 3px rgb(37, 187, 74);
+    color: rgb(37, 187, 74);
+        .mp_3 {background-image: url(A_3_green.jpg)}
+}
+
+.mp_4 {
+    background-image: url(A_4.jpg);
+}
+.products_two > div:nth-child(4):hover {
+    border-bottom: solid 3px rgb(52, 37, 187);
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_4 {background-image: url(A_4_blue.jpg)}
+}
+.products_two > div:nth-child(4):active {
+    border-bottom: solid 3px rgb(37, 187, 74);
+    color: rgb(37, 187, 74);
+        .mp_4 {background-image: url(A_4_green.jpg)}
+}
+
+.mp_5 {
+    background-image: url(A-5.jpg);
+}
+.products_two > div:nth-child(5):hover {
+    border-bottom: solid 3px rgb(52, 37, 187);
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_5 {background-image: url(A-5_blue.jpg)}
+}
+.products_two > div:nth-child(5):active {
+    border-bottom: solid 3px rgb(37, 187, 74);
+    color: rgb(37, 187, 74);
+        .mp_5 {background-image: url(A-5_green.jpg)}
+}
+
+.mp_6 {
+    background-image: url(A-6.jpg);
+}
+.products_two > div:nth-child(6):hover {
+    border-bottom: solid 3px rgb(52, 37, 187);
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_6 {background-image: url(A-6_blue.jpg)}
+}
+.products_two > div:nth-child(6):active {
+    border-bottom: solid 3px rgb(37, 187, 74);
+    color: rgb(37, 187, 74);
+        .mp_6 {background-image: url(A-6_green.jpg)}
+}
+/*Конец каталога*/
+
+/*Кнопка меню*/
+.products {
+    display: flex;
+    flex-direction: row;
+}
+.products_menu {
+    height: 360px;
+    width: 150px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.products_menu > button {
+    height: 50px;
+    width: 100px;
+}
+
+/*Товары*/
+.menu_products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.menu_products > div {
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+}
+.menu_products > div > div:nth-child(1) {
+    height: 80px;
+    width: 100px;
+}
+.menu_products > div > div:nth-child(2) {
+    height: 20px;
+    width: 100px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/*Конец Товары*/
+
+.products_two {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.products_three {
+    height: 360px;
+    width: 180px;
+    padding-top: 20px;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: solid 2px black;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: absolute;
+    background-color: white;
+}
+
+.products_three > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.p_1_2, .p_2_2, .p_3_2, .p_4_2, .p_5_2, .p_6_2, .p_7_2, .p_8_2, .p_9_2 {
+    background-image: url(A_1.jpg);
+    background-size: cover;
+}
+
+.products_three > div > div:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+
+.menu_products_dop {
+    margin-left: 120px;
+}
+
+/*Каталог*/
+.mp_1_2 {
+    background-image: url(A_1.jpg);
+}
+.products_three > div:nth-child(1):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_1_2 {background-image: url(A_1_blue.jpg)}
+}
+.products_three > div:nth-child(1):active {
+    color: rgb(37, 187, 74);
+        .mp_1_2 {background-image: url(A_1_green.jpg)}
+}
+
+.mp_2_2 {
+    background-image: url(A_2.jpg);
+}
+.products_three > div:nth-child(2):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_2_2 {background-image: url(A_2_blue.jpg)}
+}
+.products_three > div:nth-child(2):active {
+    color: rgb(37, 187, 74);
+        .mp_2_2 {background-image: url(A_2_green.jpg)}
+}
+
+.mp_3_2 {
+    background-image: url(A_3.jpg);
+}
+.products_three > div:nth-child(3):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_3_2 {background-image: url(A_3_blue.jpg)}
+}
+.products_three > div:nth-child(3):active {
+    color: rgb(37, 187, 74);
+        .mp_3_2 {background-image: url(A_3_green.jpg)}
+}
+
+.mp_4_2 {
+    background-image: url(A_4.jpg);
+}
+.products_three > div:nth-child(4):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_4_2 {background-image: url(A_4_blue.jpg)}
+}
+.products_three > div:nth-child(4):active {
+    color: rgb(37, 187, 74);
+        .mp_4_2 {background-image: url(A_4_green.jpg)}
+}
+
+.mp_5_2 {
+    background-image: url(A-5.jpg);
+}
+.products_three > div:nth-child(5):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_5_2 {background-image: url(A-5_blue.jpg)}
+}
+.products_three > div:nth-child(5):active {
+    color: rgb(37, 187, 74);
+        .mp_5_2 {background-image: url(A-5_green.jpg)}
+}
+
+.mp_6_2 {
+    background-image: url(A-6.jpg);
+}
+.products_three > div:nth-child(6):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+        .mp_6_2 {background-image: url(A-6_blue.jpg)}
+}
+.products_three > div:nth-child(6):active {
+    color: rgb(37, 187, 74);
+        .mp_6_2 {background-image: url(A-6_green.jpg)}
+}
+/*Конец каталога*/
+
+/*Меню-2*/
+
+.menu_2 {
+    padding-bottom: 20px;
+    border-bottom: solid 2px black;
+}
+
+.menu_2_body {
+    width: 650px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.three_menu {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mp_1_a {background-image: url(A_1.jpg)}
+.mp_2_a {background-image: url(A_2.jpg)}
+.mp_3_a {background-image: url(A_3.jpg)}
+.mp_4_a {background-image: url(A_4.jpg)}
+.mp_5_a {background-image: url(A-5.jpg)}
+.mp_6_a {background-image: url(A-6.jpg)}
+
+.three_menu > div:nth-child(1):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+    .mp_1_a {background-image: url(A_1_blue.jpg)}
+}
+.three_menu > div:nth-child(1):active {
+    color: rgb(37, 187, 74);
+    cursor: pointer;
+    .mp_1_a {background-image: url(A_1_green.jpg)}
+}
+
+.three_menu > div:nth-child(2):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+    .mp_2_a {background-image: url(A_2_blue.jpg)}
+}
+.three_menu > div:nth-child(2):active {
+    color: rgb(37, 187, 74);
+    cursor: pointer;
+    .mp_2_a {background-image: url(A_2_green.jpg)}
+}
+
+.three_menu > div:nth-child(3):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+    .mp_3_a {background-image: url(A_3_blue.jpg)}
+}
+.three_menu > div:nth-child(3):active {
+    color: rgb(37, 187, 74);
+    cursor: pointer;
+    .mp_3_a {background-image: url(A_3_green.jpg)}
+}
+
+.three_menu > div:nth-child(4):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+    .mp_4_a {background-image: url(A_4_blue.jpg)}
+}
+.three_menu > div:nth-child(4):active {
+    color: rgb(37, 187, 74);
+    cursor: pointer;
+    .mp_4_a {background-image: url(A_4_green.jpg)}
+}
+
+.three_menu > div:nth-child(5):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+    .mp_5_a {background-image: url(A-5_blue.jpg)}
+}
+.three_menu > div:nth-child(5):active {
+    color: rgb(37, 187, 74);
+    cursor: pointer;
+    .mp_5_a {background-image: url(A-5_green.jpg)}
+}
+
+.three_menu > div:nth-child(6):hover {
+    color: rgb(52, 37, 187);
+    cursor: pointer;
+    .mp_6_a {background-image: url(A-6_blue.jpg)}
+}
+.three_menu > div:nth-child(6):active {
+    color: rgb(37, 187, 74);
+    cursor: pointer;
+    .mp_6_a {background-image: url(A-6_green.jpg)}
+}
+
+.three_menu > div > div:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+
+.three_menu > div {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    border: solid 2px black;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.three_menu_products {
+    border: solid 2px black;
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    width: 626px;
+}
+
+.three_menu_products > div{
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+}
+
+.three_menu_products > div > div:nth-child(1) {
+    width: 100px;
+    height: 80px;
+}
+
+.three_menu_products > div > div:nth-child(2) {
+    width: 100px;
+    height: 20px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.p_1_a, .p_2_a, .p_3_a, .p_4_a, .p_5_a, .p_6_a, .p_7_a, .p_8_a, .p_9_a {
+    background-image: url(A_1.jpg);
+    background-size: cover;
+}
+
+/*Menu 4*/
+
+.menu_3 {
+    margin-top: 20px;
+}
+
+.menu_3 > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#left_button_PUM_id, #right_button_PUM_id {
+    width: 100px;
+    height: 100px;
+    border: solid 3px black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+}
+
+#left_button_PUM_id:hover, #right_button_PUM_id:hover {
+    cursor: pointer;
+}
+
+#left_button_PUM_id:active, #right_button_PUM_id:active {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.four_menu_products {
+    width: 626px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.four_menu_products > div {
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    font-size: 0.8em;
+    text-align: center;
+
+}
+
+.four_menu_products > div > div:nth-child(1) {
+    width: 100px;
+    height: 80px;
+    background-size: cover;
+}
+
+.menu_3D {
+    width: 500px;
+    height: 100px;
+    perspective: 800px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mp_1_b {background-image: url(A_1.jpg);}
+.mp_2_b {background-image: url(A_2.jpg);}
+.mp_3_b {background-image: url(A_3.jpg);}
+.mp_4_b {background-image: url(A_4.jpg);}
+.mp_5_b {background-image: url(A-5.jpg);}
+.mp_6_b {background-image: url(A-6.jpg);}
+
+.p_1_b {background-image: url(A_1.jpg);}
+.p_2_b {background-image: url(A_1.jpg);}
+.p_3_b {background-image: url(A_1.jpg);}
+.p_4_b {background-image: url(A_1.jpg);}
+.p_5_b {background-image: url(A_1.jpg);}
+.p_6_b {background-image: url(A_1.jpg);}
+.p_7_b {background-image: url(A_1.jpg);}
+.p_8_b {background-image: url(A_1.jpg);}
+.p_9_b {background-image: url(A_1.jpg);}
+
+.menu_3D > div > div:nth-child(1) {
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+}
+
+.menu_3D > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    background-color: white;
+    border: solid 2px black;
+    width: 260px;
+    height: 50px;
+    padding: 5px;
+    transition: 300ms;
+    font-size: 1.8em;
+}
+
+.menu_3D > div:nth-child(1) {transform: rotateY(0deg) translateZ(250px) translateY(20px);}
+.menu_3D > div:nth-child(2) {transform: rotateY(60deg) translateZ(250px) translateY(20px);}
+.menu_3D > div:nth-child(3) {transform: rotateY(120deg) translateZ(250px) translateY(20px);}
+.menu_3D > div:nth-child(4) {transform: rotateY(180deg) translateZ(250px) translateY(20px);}
+.menu_3D > div:nth-child(5) {transform: rotateY(240deg) translateZ(250px) translateY(20px);}
+.menu_3D > div:nth-child(6) {transform: rotateY(300deg) translateZ(250px) translateY(20px);}
+

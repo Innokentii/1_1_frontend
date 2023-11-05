@@ -1,0 +1,33 @@
+{% extends 'frontend.html' %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/Line_selection_CSS.css">
+<span>Выборка строки (стандартная вёрстка)</span>
+<div>
+    <ol class="line_selection" id="line_sel_id">
+        <li>Физика 10-й класс</li>
+        <li>Игра престолов (песнь льда и пламени)</li>
+        <li>История мира "пирамида Хеопса"</li>
+        <li>Как стать миллиардером - 100 шагов</li>
+        <li>Френк Герберд - Дюна</li>
+        <li>Суюнь Дзы - искуство войны</li>
+    </ol>
+    <span>Нажмите строку для выделения нужной книги.</span><br>
+    <span>Нажмите Ctrl + строку для выделения нескольких нужных книг.</span><br>
+</div>
+<hr>
+<span>Выборка строки (вёрстка чисто на Java Script)</span>
+<div id="line_selection_id_JS">
+
+</div>
+<hr>
+<span>Выборка строки (вёрстка в JQuery)</span>
+<div id="line_selection_id_JQ">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/static/Line_selection.js"></script>
+
+{% endblock %}

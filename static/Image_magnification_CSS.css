@@ -1,0 +1,51 @@
+.Image_magnification {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px;
+}
+
+.img_0 {
+    width: 520px;
+    height: 520px;
+    background-image: url('A_1_17.jpg');
+    background-size: cover;
+    border: solid 1px black;
+}
+
+.img_0:hover {
+    cursor: zoom-in;
+}
+.img_0:active {
+    cursor: zoom-out;
+    background-size: 1040px, 1040px;
+}
+.img_1, .img_2, .img_3 {
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    border: solid 1px black;
+}
+.img_1:hover, .img_2:hover, .img_3:hover {
+    cursor: pointer;
+    width: 154px;
+    height: 154px;
+    border: solid 4px black;
+}
+
+.choosing_clothes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img_1 {
+    background-image: url("A_1_17.jpg");
+}
+.img_2 {
+    background-image: url("A_2_17.jpg");
+}
+.img_3 {
+    background-image: url("A_3_17.jpg");
+}
